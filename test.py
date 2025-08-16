@@ -96,3 +96,19 @@ def manhatten_distance(x1, y1, x2, y2):
     return my_abs((x2-x1) + (y2-y1))
 
 print(manhatten_distance(2,3,4,5))
+
+#예제7. 위 코드가 아래와 같이 출력될 수 있도록 하려면 최종적으로 만들어지는 리스트가 [1, 0, 4]여야 함
+
+num = int(input('거슬러줄 돈을 입력: '))
+coin = [10, 7, 1]
+c = []
+
+coin = [10, 7, 1]
+
+for i in range(len(coin)):
+    temp = num//coin[i]
+    num = num % coin[i]
+
+    c.append(temp)
+
+print(c)
