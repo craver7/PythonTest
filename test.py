@@ -84,3 +84,15 @@ def distance_function(x1, y1, x2, y2):
     return math.sqrt((x2-x1)**2 + (y2-y1)**2)
 
 print(distance_function(2,3,4,5))
+
+import math
+
+def my_abs(num):
+    if num < 0:
+        return -num
+    return num
+
+def manhatten_distance(x1, y1, x2, y2):
+    return my_abs((x2-x1) + (y2-y1))
+
+print(manhatten_distance(2,3,4,5))
