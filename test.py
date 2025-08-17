@@ -112,3 +112,17 @@ for i in range(len(coin)):
     c.append(temp)
 
 print(c)
+
+a = 'france'
+b = 'french'
+
+#a랑 b를 이렇게 바꿔줘야 함
+#['FR', 'RA', 'AN', 'NC', 'CE']
+#['FR', 'RE', 'EN', 'NC', 'CH']
+
+result1 = []
+
+for i in range(len(a) - 1):
+    result1.append(a[i:i+2].upper())
+
+print(result1)
