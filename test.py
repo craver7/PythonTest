@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 var = 1 + 2 * 3
 print(var)
 for i in range(10):
@@ -126,3 +127,12 @@ for i in range(len(a) - 1):
     result1.append(a[i:i+2].upper())
 
 print(result1)
+
+# pip install pandas
+import pandas as pd
+
+s = pd.Series(["Ab","Cd","Ef", 123])
+
+print(s)
+
+df = pd.DataFrame({'Name': ['', 'B', 'C', 'D', 'E'],})
