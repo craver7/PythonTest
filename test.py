@@ -135,4 +135,7 @@ s = pd.Series(["Ab","Cd","Ef", 123])
 
 print(s)
 
-df = pd.DataFrame({'Name': ['A', 'B', 'C', 'D', 'E'],})
+# df = pd.DataFrame({'Name': ['A', 'B', 'C', 'D', 'E'],})
+
+df = pd.read_csv('/mnt/chromeos/MyFiles/Downloads/test.csv')
+df.info()
